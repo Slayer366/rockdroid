@@ -1,0 +1,254 @@
+####################################################################################################################################
+.061
+####################################################################################################################################
+Build with latest SDL from Pelya.
+Fix crash in classmap::dropItem due to different array sizes and std::copy.
+
+####################################################################################################################################
+.050
+####################################################################################################################################
+Code cleanup.
+Update Android SDK to latest version.
+Fix #73 - change giant fly to UFO and improve it's AI.
+Fix #120 set parabola when no target is defined.
+Use actual player hitbox instead of hardcoded values for w/h.
+Fix #119 - adjust so all projectiles from bomb rain fall into the screen width and do not change new bombs dropping position if scroll changes.
+Fix #128 - boss music keeps playing after defeating sub-boss.
+Fix #130 - Pick Option menu to use BG image instead of solid colors.
+Fix #127 - Player falls from jet when using down to move it.
+
+EDITOR:
+    fix layer number in parallax tab in movie editor to be filled again with 0-10 values. Improve UI for scenes editor.
+    Add mousewheel zoom adjust in tileset selector and projectile preview areas.
+    fix issue with tileset selection when using zoom and save/load selected theme.
+    Fix #126 - swap stages missing changing enemies and objects.
+    Fix run game on Windows platform.
+
+MISC:
+    Add license details in docs, fixes #124
+
+####################################################################################################################################
+.0.44
+####################################################################################################################################
+#60  - não dá para usar coil em save-point
+#117 - EDITOR: fill_files_combo tem que criar diretório se não existe
+#62  - enemies get locked into stairs instead of turning back
+#75  - improve h-star position in mine
+
+
+####################################################################################################################################
+.0.43
+####################################################################################################################################
+- EDITOR: fix animated tiles-area to be scrolleable
+- fix collision on water when there is a single block ahead
+- fixed animation-timer for when shooting on stair
+- changed 1up style and animation
+- do not change to default weapon after calling coil or jet
+- correct jet/coil colors on teleport
+- remove jet/coil once player dies
+- jet item should only start moving once player set foot on it
+- do not show boss HP is he is dead or out of extended-screen
+
+
+<en-US>
+- fix collision on water when there is a single block ahead
+- fixed animation-timer for when shooting on stair
+- changed 1up style and animation (even if this item is deprecated)
+- do not change to default weapon after calling coil or jet
+- correct jet/coil colors on teleport
+- remove jet/coil once player dies
+- jet item should only start moving once player set foot on it
+- do not show boss HP is he is dead or out of extended-screen
+</en-US>
+<pt-BR>
+Correções:
+- colisão em água com apenas 1 tile à frente
+- tempo da animação ao atirar quando em escada
+- não mudar arma para nromal ao ativar jato/mola
+- cores de jato/mola no teleporte
+- jet e mola devem sumir quando o jogador morre
+- jet só deve começar a mover quando o jogador estiver efetivamente em cima dele
+- não mostrar vida do chefe se ele morreu
+MELHORIAS:
+- mudada aparência do item vida (ainda que ele não seja mais necessário)
+</pt-BR>
+
+####################################################################################################################################
+.0.42
+####################################################################################################################################
+- #2: improve lighting attack, show where it will land before, fix vertical position
+- #2: new boss order in castle stages
+- improved backgrounds and tilesets in stages
+- (partial) spanish translation from DOUBLE JAY GREEN
+- remove debug in input for Android port, could improve performance
+
+
+####################################################################################################################################
+.0.41
+####################################################################################################################################
+Fix crash in music and sound effects player.
+Different icons for 1 and 2 in Dingux/PocketGo
+Octopus Tenctacles should not fall due to boss intro
+Changed boss explosion
+
+####################################################################################################################################
+.0.40
+####################################################################################################################################
+Thanks to Yama Droid for the bug reporting.
+Fix destrin rain of bombs exploding on the ceiling.
+Fix invalid AI state that made enemies to stop moving.
+Fly-to-Player was not changing directions to face him.
+Dash effect was not updating when changing directions.
+Removed teleport left by mistake on Spike's stage.
+Fix error in map-collision old-point using wrong Y.
+--------------------------------------------------------------
+Obrigado ao Yama Droid pelos relatos de bugs.
+Chuva de bombas não deve explodir no teto.
+Correção de estado de IA inválido que fazia inimigos pararem.
+IA Voar-até-jogador não estava virando em direção a ele.
+Efeito de dash não estava resetando ao mudar a direção.
+Removido teleporte esquecido na fase do Spike.
+Correção na colisão de mapa em que o ponto anterior usava um Y errado.
+
+####################################################################################################################################
+.0.38
+####################################################################################################################################
+Default language - en-US
+Show selected character and difficulty on save picker
+Added back boss dialogs
+New level selection screen
+Convert music from ogg to mp3 at a low bitrate to keep size small
+Added option to use MOD music instead of mp3
+New "about" screen
+Adjust for button A/X position
+Show boss intro even if stage is already completed
+Bosses will appear again even if the stage is complete
+Option to leave stage directly from in-game menu
+New sprites for Milonga based on Arismeire's design
+--------------------------------------------------------------------------------------
+Mostrar personageme  dificuldade na seleção de save
+Retorno de diálogos de chefes
+Nova tela de seleção de fase
+Música convertida para mp3 em baixa resolução para tamanho menor
+Opção para tocar música MOD no lugar de mp3
+Nova tela de "sobre"
+Ajuste para posição dos botoes de tela A/X
+Mostra intro e chefe mesmo para fases já completadas
+Opção para sair da fase direto no menu de jogo
+Novos sprites para Milonga baseados no design de Arismeire
+--------------------------------------------------------------------------------------
+
+
+- EDITOR: show option for language in scene player
+- PC-only: fullscreen scales resolution to adjust to screen
+- PC-only: can now resize window for integer scale
+===================================================================
+- fix for vertical moving along wall enemy
+- show selected character and difficulty on save picker
+- was not able to leave in-game menu if crystal was selected
+- checkpoint not falling into ground when player returns from death
+- added back boss dialogs
+- new level selection screen
+- convert music from ogg to mp3 at a low bitrate to keep size small
+- added option to force playing the MOD music instead of mp3, for higher quality
+- new "about" screen
+- adjust for button A/X position
+- fix shouryuken animation sprite missing and being able to air-dash afterwards
+- try to fix crash in artificial_inteligence::get_ai_type and menu pick
+- show boss intro even if stage is already completed
+- bosses will appear again even if the stage is complete
+- log class to better handle android/cout
+- new sprites for Milonga based on Arismeire's design
+- deprecate and remove all tiles with terrain type checkpoint
+- option to leave stage directly from in-game menu
+
+####################################################################################################################################
+.0.32
+####################################################################################################################################
+- Coil item teleporting before reaching player position
+- Allow enemy to move when half of it is out of the water
+- Do not stop slide when under a solid brick
+- Add option to play old-style music for Rockbot1
+- If a ogg file is not found, play the mod instead
+
+####################################################################################################################################
+.0.31
+####################################################################################################################################
+Fix setting player to Rockbot when loading game
+Fix ending being incomplete
+
+####################################################################################################################################
+.0.30
+####################################################################################################################################
+Common:
+    Add initial delay for bossses start moving
+    Fix boss music not playing.
+    Show "new characters available" message on ending credits
+    PocketGo port
+    Added back enemy background with fixes in positon
+
+Rockbot1:
+    Fix some issues in stage and enemy placing.
+    Fix ending stopping stars animation while waits for keypress
+
+Rockbot2:
+    Kurupira: remove armor-piece from stage, as we already have it on Gear stage
+    Gear: add teleport after armor piece in stage to return to regular path. Gear should not walk/dash, but jump, as he is too big to jump over.
+    Valkyrie: remove debug items and adjust tank position so you can reach it with coil
+    Castle5: Destrin should change frame to indicate if is pushing or pulling.
+
+
+
+####################################################################################################################################
+- título
+- capa
+- tamanho identação parágrafo
+
+
+
+
+
+####################################################################################################################################
+- added frameskip for Dingux and PS2
+- add back PS2 build (still not working)
+- add 30 fps max mode (still under construction)
+- fix crash in number pick (for real this time)
+- added option to set on-screen buttons spacing
+- added option to set audio buffer size (should fix issue with choppy sound, but adds delay)
+####################################################################################################################################
+
+
+005 - 44Khz
+006 - exit(-1) nos erros de música
+007 - mais buffer
+008 - disable music
+009 - disable volume
+
+####################################################################################################################################
+
+- value picker fix for volumes setting
+- ANDROID: increase spacing for buttons
+- increase audio buffer size
+- removido backgrund de NPC, já que não era usado
+- update 1up icon in RockBot2
+- change prision graphics (it is original, but too close, people might mistake)
+- remove background graphics in NPC that is not used anymore
+- corrigido problema que fazia setar sempre o player 1 ao carregar save
+- mostra nome do chefe na tela de seleção de fase
+- fix crash in npc reset_timers due to access to non-existing graphic entry (Filiberto Castrodad)
+- update copyright notice to 2020
+- include JDM in Intro
+
+####################################################################################################################################
+
+- fix getting stuck in invalid place after dying and returning to checkpoint (thanks to Pix-el 64)
+- try to fix crash that happens sometimes when you open leave game outside the game (like save selection) and pick no
+- update the SDL version to check if it will fix the audio issue some users reported
+- change weapon menu to use directional icon to show how to change weapons
+- add music for walking player in the ending
+- bosses/sub-bosses need a greater invulnerability time after being hit
+- change android app icons
+- finished tileset change in Kurupira stage
+
+
+- [PC] change window icon

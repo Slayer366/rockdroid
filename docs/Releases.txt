@@ -1,0 +1,35 @@
+#######################################################################################################################
+2020-XX-XX
+#######################################################################################################################
+- fix boss music not playing
+- increase default button spacing in Android
+
+
+#######################################################################################################################
+2020-05-24
+#######################################################################################################################
+- use ogg files instead of mod ones in Android to fix audio music issues
+- fix ghost flag not working due to being unset
+- ghost enemies will show under the tileset
+
+#######################################################################################################################
+2020-03-11
+#######################################################################################################################
+- jogo volta a ser chamado RockBot
+- correção para tooltip de arma aparecendo abaixo de tiles
+- correçãod e inimigos se teleportando para fora de sala com objeto porta
+- removida animação de teleporte para o jogador
+- refeitos os sprites do RockBot
+- readicionada seleção de personagem
+- readicionada seleção de armas no menu de jogo
+
+=======================================================================================================================
+- game is now called RockBot again
+- fix weapon tooltip showing under tiles
+- fix enemies teleporting out of room with door object
+- remove player's teleporting animation
+- new sprites for RockBot
+- readded character selection
+- readded weapon selection on in-game menu
+
+#######################################################################################################################
