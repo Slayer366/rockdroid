@@ -12,11 +12,11 @@ EQ            = =
 
 ####### Compiler, tools and options
 
-CC            = gcc-7
-CXX           = g++-7
+CC            = gcc-5
+CXX           = g++-5
 DEFINES       = -DLINUX
-CFLAGS        = -pipe -O2 -Wall -W -fPIC $(DEFINES)
-CXXFLAGS      = -pipe -std=c++17 -O2 -DLINUX -DPC -Wno-reorder -Wno-ignored-qualifiers -Wno-deprecated -Wno-unused-parameter -Wno-sign-compare -fpermissive -mtune=generic -Werror=return-type -fstack-protector-all -fstack-protector -O2 -Wall -W -fPIC $(DEFINES)
+CFLAGS        = -pipe -O2 -Wall -W -fPIC -fsigned-char $(DEFINES)
+CXXFLAGS      = -pipe -std=c++17 -O2 -DLINUX -DPC -Wno-reorder -Wno-ignored-qualifiers -Wno-deprecated -Wno-unused-parameter -Wno-sign-compare -fpermissive -mtune=generic -Werror=return-type -fstack-protector-all -fstack-protector -O2 -Wall -W -fPIC -fsigned-char $(DEFINES)
 INCPATH       = -I. -I/usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++
 QMAKE         = /usr/lib/qt5/bin/qmake
 DEL_FILE      = rm -f
@@ -38,7 +38,7 @@ TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = rockbot1.0.0
 DISTDIR = /home/ark/rockdroid/.tmp/rockbot1.0.0
-LINK          = g++
+LINK          = g++-5
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) -L/usr/X11R6/lib -lSDL_mixer -lSDL_image -lSDL_ttf -lSDL_gfx `sdl-config --libs` -ldl -lstdc++ -fstack-protector-all   
 AR            = ar cqs
